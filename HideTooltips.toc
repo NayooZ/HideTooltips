@@ -1,0 +1,9 @@
+## Title: |TInterface/Addons/HideTooltips/icon:16:16|t HideTooltips
+## Notes: Hides a set list of tooltips due to broken cursor anchoring.|n|cffbbbbbbBy Nayo|r|n|n|cff82c5ffUsage: /htt
+## X-License: All Rights Reserved
+## Category: Tooltip
+## Author: Nayo
+## Interface: 50502
+## Version: 1.0.0
+
+HideTooltips.lua
