@@ -6,9 +6,8 @@ function Addon:UpdateMinimapIcon()
     local enabled = self.db.profile.enabled
     local icon = enabled
         and "Interface\\AddOns\\HideTooltips\\media\\icon_on.tga"
-        or  "Interface\\AddOns\\HideTooltips\\media\\icon_off.tga"
-
-    LDB:GetDataObjectByName("HideTooltips").icon = icon
+        or "Interface\\AddOns\\HideTooltips\\media\\icon_off.tga"
+    LibStub("LibDataBroker-1.1"):GetDataObjectByName("HideTooltips").icon = icon
 end
 
 
@@ -98,7 +97,7 @@ local ldbObject = LDB:NewDataObject("HideTooltips", {
             print("HideTooltips: addon is now " ..
                 (db.enabled and "|cff00ff00ENABLED|r" or "|cffff0000DISABLED|r"))
 
-            Addon:UpdateMinimapIcon()  -- FIX: update the icon after each click
+            Addon:UpdateMinimapIcon()  -- update the icon after each click
 
         elseif button == "RightButton" then
             -- Open AceConfig Options
@@ -131,11 +130,9 @@ function Addon:OnEnable()
 
 	self:RegisterChatCommand("htt", function()
     self.db.profile.enabled = not self.db.profile.enabled
-
     local msg = self.db.profile.enabled and "|cff00ff00ENABLED|r" or "|cffff0000DISABLED|r"
     print("HideTooltips: addon is now " .. msg)
-
-    UpdateMinimapIcon()  -- apply new icon
+    Addon:UpdateMinimapIcon()  -- apply new icon
 	end)
-
+	
 end
