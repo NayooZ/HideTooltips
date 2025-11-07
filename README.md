@@ -6,7 +6,7 @@
 ## 1. Installation
 Available for Download at: 
 
-[Curseforge](https://www.curseforge.com/wow/addons/hide-tooltips) | [Wago](link)
+[Curseforge](https://www.curseforge.com/wow/addons/hide-tooltips) | [Wago](https://addons.wago.io/addons/hidetooltips)
 
 ## 2. Why would I need this?
 
