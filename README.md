@@ -44,6 +44,13 @@ This addon can hide tooltips for the following:
 
 <img width="992" height="732" alt="image" src="https://github.com/user-attachments/assets/2086fe7d-62a3-4cf8-8178-a09c9ef33ce8" />
 
+### Slash Command
+
+- You can also quickly turn the addon on and off with /htt
+
+<img width="324" height="74" alt="image" src="https://github.com/user-attachments/assets/cac73536-5847-4fc4-a993-4d30f9543441" />
+
+
 ### LDB
 - The addon is LDB compatible so you can add it to any LDB Display (tested with Titan Panel).
 
