@@ -33,6 +33,12 @@ local MAILBOX = {
     ["Mailbox"] = true,
 }
 
+local WARLOCK = {
+    ["Summoning Portal"] = true,
+ 	["Meeting Stone Summoning Portal"] = true,
+	["Soulwell"] = true,
+}
+
 -------------------------------------------------------
 -- TOOLTIP CHECK
 -------------------------------------------------------
@@ -54,6 +60,7 @@ local function ShouldHideTooltip(tt)
     if Addon.db.profile.hideBobber and BOBBER[unitName] then return true end
     if Addon.db.profile.hidePools and POOLS[unitName] then return true end
     if Addon.db.profile.hideMailbox and MAILBOX[unitName] then return true end
+	if Addon.db.profile.hideWarlock and WARLOCK[unitName] then return true end
 
     return false
 end
@@ -74,6 +81,7 @@ self.db = LibStub("AceDB-3.0"):New("HideTooltipsDB", {
         hideBobber = true,
         hidePools = true,
         hideMailbox = true,
+		hideWarlock = true,
 
         minimap = {
             hide = false,   -- LibDBIcon requires this exact key
@@ -136,3 +144,4 @@ function Addon:OnEnable()
 	end)
 	
 end
+
