@@ -27,6 +27,8 @@ This addon can hide tooltips for the following:
  *   Krasarang Paddlefish School
  *   Shipwreck Debris
  *   Mailbox
+ *   Summoning Stone
+ *   Soulwell
 
 ## 4. How to use
 
