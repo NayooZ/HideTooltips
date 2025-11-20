@@ -4,7 +4,7 @@
 ## Category: Tooltip
 ## Author: Nayo
 ## Interface: 50502
-## Version: 1.1.0
+## Version: 1.2.0
 ## SavedVariables: HideTooltipsDB
 
 libs\LibStub\LibStub.lua
@@ -16,4 +16,5 @@ libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
 
 HideTooltips.lua
+
 HideTooltipsOptions.lua
